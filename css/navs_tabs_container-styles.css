@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+ul.nav {
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 500px) {
+    ul.nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul > li {
+        padding: 0.6rem 1 rem;
+        animation: fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+}
+
+ul > li {
+    text-align: center;
+    padding-inline: 1rem;
+}
+
+a {
+    color: var(--bs-gray-900) !important;
+}
+
+a.active {
+    /* background-color: aqua; */
+    font-weight: normal !important;
+
+}
+
+a.active[href="#Home"], a.nav-link[href="#Home"]:hover {
+    color: var(--bs-cyan) !important;
+}
+
+a.active[href="#Cats"], a.nav-link[href="#Cats"]:hover {
+    color: var(--bs-pink) !important;
+}
+
+a.active[href="#Dogs"], a.nav-link[href="#Dogs"]:hover {
+    color: var(--bs-blue) !important;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+    transform: scale(1.1); 
+}
