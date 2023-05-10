@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.canvas {
+    max-width: 1080px;
+    min-height: 100vh;
+    background-color: rgb(154, 252, 252);
+}
+
+header{
+    min-width: inherit;
+    min-height: fit-content;
+    background-color: rgb(66, 155, 155);
+
+    display: grid;
+    grid-template-columns: repeat(8, minmax(100px, 1fr));
+    grid-template-rows: 80px 60px;
+    /* justify-content: start; */
+}
+
+header > ul.nav {
+    grid-column: 1;
+    /* height: 20px; */
+}
+
+header > form.search-form{
+    height: 30px;
+    grid-column: 4;
+    align-self: center;
+
+    grid-column: 7 /span 4;
+}
+
+main {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 6fr 5fr;
+    /* grid-template-rows: 1fr 40px 40px; */
+}
+
+main > div.article-box {
+    display: flex;
+    flex-direction: column;
+}
+
+main > p {
+    /* padding: 10px 40px; */
+}
+
+main > a.read-more-expandable {
+    /* display: block; */
+    max-width: fit-content;
+    grid-column: 1;
+    justify-self: center;
+}
+
+main > div > div.card-body {
+    grid-column: 2;
+    background-color: blueviolet !important;
+}
+
+/* a.read-more-expandable:active {
+    display: none;
+} */

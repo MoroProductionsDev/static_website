@@ -28,7 +28,7 @@ ul.nav {
 
 ul > li {
     text-align: center;
-    padding-inline: 1rem;
+    padding-inline: 0.5rem;
 }
 
 a {
@@ -36,22 +36,37 @@ a {
 }
 
 a.active {
-    /* background-color: aqua; */
     font-weight: normal !important;
-
 }
 
-a.active[href="#Home"], a.nav-link[href="#Home"]:hover {
+a.active[href="#home"], a.nav-link[href="#home"]:hover {
     color: var(--bs-cyan) !important;
 }
 
-a.active[href="#Cats"], a.nav-link[href="#Cats"]:hover {
+a.active[href="#cats"], a.nav-link[href="#cats"]:hover {
     color: var(--bs-pink) !important;
 }
 
-a.active[href="#Dogs"], a.nav-link[href="#Dogs"]:hover {
+a.active[href="#dogs"], a.nav-link[href="#dogs"]:hover {
     color: var(--bs-blue) !important;
 }
+
+a.active[href="#birds"], a.nav-link[href="#birds"]:hover {
+    color: var(--bs-primary-text-emphasis) !important;
+}
+
+a.active[href="#fish"], a.nav-link[href="#fish"]:hover {
+    color: var(--bs-green) !important;
+}
+
+a.active[href="#small"], a.nav-link[href="#small"]:hover {
+    color: var(--bs-orange) !important;
+}
+
+a.active[href="#faqs"], a.nav-link[href="#faqs"]:hover {
+    color: var(--bs-indigo) !important;
+}
+
 
 .grow { 
     transition: all .2s ease-in-out; 

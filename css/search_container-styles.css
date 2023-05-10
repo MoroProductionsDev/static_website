@@ -5,6 +5,7 @@
 
 :root {
     --srch_btn_col: #0b76bf;
+    --srch_btn_active_col: #377adf;
     --srch_btn_text_col: black;
     --srch_btn_hvr_text_col: white;
 }
@@ -13,17 +14,32 @@ form {
     width: fit-content;
     display: flex;
     gap: 1rem;
-    border:3px solid blue !important;
+}
+
+input.form-control {
+    height: 30px;
+    /* background-color: #0b76bf; */
 }
 
 button.btn-outline-success {
     color: var(--srch_btn_col);
     border-color: var(--srch_btn_col);
-    padding-inline: 15px;
+    /* margin-inline: 15px; */
 }
 
 button.btn-outline-success:hover {
     color: var(--srch_btn_hvr_text_col);
     border-color: var(--srch_btn_col);
     background-color: var(--srch_btn_col);
+}
+
+button.btn-outline-success:active {
+    color: var(--srch_btn_hvr_text_col);
+    border-color: var(--srch_btn_active_col);
+    background-color: var(--srch_btn_active_col) !important;
+}
+
+span.input-group-text {
+    width: 30px;
+    padding: 0 7px;
 }

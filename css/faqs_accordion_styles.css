@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.accordion {
+    max-width: 800px;
+}
+
+div.accordion-body > p:not(.card-text){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-right: 5rem; */
+}
+
+div.accordion-body > ol{
+    display: grid;
+    justify-content: center;
+}
+
+span{
+    margin-left: 20px;
+}

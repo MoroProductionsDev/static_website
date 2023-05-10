@@ -8,22 +8,27 @@ div.logo-picture {
     width: fit-content;
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.8rem;
-    align-items: end;
+    align-items: start;
+    visibility: hidden;
 }
 
 img.switching_logo {
+    border-radius: 0.2rem;
     object-fit: contain;
     max-height: 60px;
-    animation: drop .4s linear forwards .6s;
+    animation: drop 1.2s linear forwards 1.4s;
+    /* animation-delay: 0.1s; */
 }
 
 img.designed-logo {
+    border-radius: 0.2rem;
     object-fit: contain;
-    max-height: 175px;
-    margin-right: 25px;
-    animation: drop .4s linear forwards .6s;
+    max-height: 60px;
+    /* margin-right: 25px; */
+
+    animation: drop 1.0s linear forwards 1.6s;
 }
 
 @media (max-width: 500px) {
@@ -43,5 +48,5 @@ img.designed-logo {
     50% {transform: translateY(0px) scaleY(1); opacity: 1;}
     65% {transform: translateY(-17px) scaleY(.9); opacity: 1;}
     75% {transform: translateY(-22px) scaleY(.9); opacity: 1;}
-    100% {transform: translateY(0px) scaleY(1); opacity: 1;}
-  }
+    100% {visibility: visible; transform: translateY(0px) scaleY(1); opacity: 1;}
+}
