@@ -10,6 +10,9 @@
     <link href="./css/logo-styles.css" rel="stylesheet" />
     <link href="./css/navs_tabs_container-styles.css" rel="stylesheet" />
     <link href="./css/search_container-styles.css" rel="stylesheet" />
+    <link href="./css/appt_form-styles.css" rel="stylesheet" />
+    <script src="./js/read-more-expand.js"></script>
+    <script src="./js/show-hide-navbar.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -62,27 +65,110 @@
           <div class="article-box">
           <article>
             <p>
-              Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.
+              Pets are nature's gift to humanity. It has been scientifically proven that opening our
+              homes and hearts to a pet increases our longevity and improves our overall quality
+              of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is
+              to offer resources to help you care for your furry, scaly, feathery, and slimy loved
+              ones. Our pet experts—or “Pexperts”—have been working with pet owners and
+              professionals alike for the past twelve years. They offer one-on-one consultations
+              with current and prospective pet owners as well as group presentations designed
+              for veterinary, pet shelter, and pet breeding professionals.
+              </p>
+              <p>
+              Looking for basic pet care advice for the most common type of pets? Need
+              additional help determining which type of pet is right for you and your family? We
+               will work with you and provide tailored evidence-based pet care to ensure lifelong
+              health and wellness of your new companion. 
+              </p>
+            <a class="btn btn-outline-light read-more-expandable" data-bs-toggle="collapse" href="#readMore-collapse" role="button" aria-expanded="false" aria-controls="readMore-collapse" onclick='hideElement(this)'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-text-indent-right" viewBox="0 0 16 16">
+                <path d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm10.646 2.146a.5.5 0 0 1 .708.708L11.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zM2 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              Continue...
+            </a>
+          <div class="collapse" id="readMore-collapse">
+            <div class="card card-body">
+              <p>
               Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion. 
             </p>
-            </article>
-          <br><a class="btn btn-info read-more-expandable" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Link with href
-          </a>
-
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion. 
+            <p>
               Looking for your new best friend? The following organizations can help you find and adopt the perfect companion:
-              •	General Adoption Resources: https://theshelterpetproject.org/ 
-              •	ASPCA: https://www.aspca.org/ 
-              •	Fish Rescue: https://www.sterlingshelter.org/humane-society/koi-fish-rescue/
-              •	Snake Rescue: https://savethesnakes.org/snakerescuecall/
-              •	Bird Rescue: https://ftlob.rescuegroups.org/
+            </p>
+              <ul>
+                <li>General Adoption Resources: <a href="https://theshelterpetproject.org/">https://theshelterpetproject.org/</a></li>
+                <li>ASPCA: <a href="https://www.aspca.org/">https://www.aspca.org/</a></li>
+                <li>Fish Rescue: <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/">https://www.sterlingshelter.org/humane-society/koi-fish-rescue/</a></li>
+                <li>Snake Rescue: <a href="https://savethesnakes.org/snakerescuecall/">https://savethesnakes.org/snakerescuecall/</a></li>
+                <li>Bird Rescue: <a href="https://ftlob.rescuegroups.org/">https://ftlob.rescuegroups.org/</a></li>
+              </ul>
+              <p>
               We are also happy to help you navigate the adoption process! We will guide you through each step in the process from determining which type of pet is best suited for your family and home environment, to completing the necessary paperwork, to bringing your new loved one home. Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.
+            </p>
             </div>
           </div>
           </div>
+        </article>
+        <form class="row g-3 needs-validation pet-form" novalidate>
+          <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="" placeholder="John" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Doe" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom03" class="form-label">Email</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="@example.com" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-8">
+              <label for="validationCustom04" class="form-label">Phone</label>
+              <input type="text" class="form-control" id="validationCustom03" value="" placeholder="(808) 888-8888" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+          </div>  
+          <div class="col-md-4">
+              <label for="validationCustom05" class="form-label">Pet Type</label>
+              <select class="form-select" id="validationCustom05" required>
+                <option selected disabled value="">Choose...</option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="bird">Bird</option>
+                <option value="fish">Fish</option>
+                <option value="small">Small</option>
+              </select>
+          </div>
+            <div class="col-md-">
+              <label for="validationCustom06" class="form-label">Location</label>
+              <select class="form-select" id="validationCustom05" required>
+                <option selected disabled value="">Choose...</option>
+                <option value="NY">Long Island, New York</option>
+                <option value="CA">Petaluma, California</option>
+                <option value="NY">Orlando, Florida</option>
+                <option value="NY">Houston, Texas</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn btn-primary" type="submit">Schedule an Appoiment</button>
+            </div>
+      </form>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis veniam nobis voluptatum? Odit tempora nisi veniam tempore sint fuga recusandae, id beatae quas nemo neque ipsa itaque voluptatum nulla.
+      </p>
         </main>
     </div>
 </body>

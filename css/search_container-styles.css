@@ -10,7 +10,7 @@
     --srch_btn_hvr_text_col: white;
 }
 
-form {
+form.search-form {
     width: fit-content;
     display: flex;
     gap: 1rem;

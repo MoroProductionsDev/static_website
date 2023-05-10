@@ -3,25 +3,37 @@
     margin: 0;
 }
 
-a {
-    text-decoration: none;
+body {
+    display: grid;
+    justify-content: center;
 }
 
 div.canvas {
     max-width: 1080px;
     min-height: 100vh;
-    background-color: rgb(154, 252, 252);
+    /* background-color: rgb(154, 252, 252); */
 }
 
 header{
+    background-color: white;
+    
     min-width: inherit;
     min-height: fit-content;
-    background-color: rgb(66, 155, 155);
+    /* background-color: rgb(66, 155, 155); */
 
     display: grid;
-    grid-template-columns: repeat(8, minmax(100px, 1fr));
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
     grid-template-rows: 80px 60px;
     /* justify-content: start; */
+}
+/* 
+header::-webkit-scrollbar {
+    position: sticky;
+    top: 0;
+} */
+
+a {
+    text-decoration: none;
 }
 
 header > ul.nav {
@@ -38,33 +50,47 @@ header > form.search-form{
 }
 
 main {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: grid;
     grid-template-columns: 6fr 5fr;
     /* grid-template-rows: 1fr 40px 40px; */
 }
 
-main > div.article-box {
+main  div.article-box  article {
     display: flex;
     flex-direction: column;
 }
 
-main > p {
-    /* padding: 10px 40px; */
+main article {
+    padding: 10px 40px;
 }
 
-main > a.read-more-expandable {
-    /* display: block; */
+article > p:nth-last-of-type(1) {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+a.read-more-expandable {
     max-width: fit-content;
-    grid-column: 1;
-    justify-self: center;
+    align-self: center;
+    background-image: linear-gradient(var(--bs-white), var(--bs-cyan));
+
 }
 
-main > div > div.card-body {
-    grid-column: 2;
-    background-color: blueviolet !important;
+div.readMore-collapse {
+    padding: 0;
 }
 
-/* a.read-more-expandable:active {
-    display: none;
-} */
+div.card-body {
+    padding: inherit;
+    margin: 0;
+    background-color: inherit !important;
+    border: none;
+}
+
+form.pet-form {
+    margin: 40px;
+    border: 3px solid var(--bs-cyan);
+    border-radius: 0.3rem;
+    background-clip: padding-box;
+}
