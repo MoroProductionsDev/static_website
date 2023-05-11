@@ -1,22 +1,30 @@
 * {
     padding: 0;
     margin: 0;
+    color: var(--bs-gray-900);
+}
+
+html {
+    position: relative;
 }
 
 body {
     display: grid;
     justify-content: center;
+    background: rgba(0, 0, 0, 0.01)
+    url("../imgs/cat_dog_bck_contrast.png"); /* The path start from the .css file location. In this case the [css] folder. */
+    background-position: -250px 0;
+    background-repeat: no-repeat;
+    background-size: 150vh;
+    overflow-y: scroll;
 }
 
 div.canvas {
     max-width: 1080px;
     min-height: 100vh;
-    /* background-color: rgb(154, 252, 252); */
 }
 
-header{
-    background-color: white;
-    
+header{    
     min-width: inherit;
     min-height: fit-content;
     /* background-color: rgb(66, 155, 155); */
@@ -24,13 +32,7 @@ header{
     display: grid;
     grid-template-columns: repeat(5, minmax(100px, 1fr));
     grid-template-rows: 80px 60px;
-    /* justify-content: start; */
 }
-/* 
-header::-webkit-scrollbar {
-    position: sticky;
-    top: 0;
-} */
 
 a {
     text-decoration: none;
@@ -38,14 +40,12 @@ a {
 
 header > ul.nav {
     grid-column: 1;
-    /* height: 20px; */
 }
 
 header > form.search-form{
     height: 30px;
     grid-column: 4;
     align-self: center;
-
     grid-column: 7 /span 4;
 }
 
@@ -53,7 +53,6 @@ main {
     /* background-color: aquamarine; */
     display: grid;
     grid-template-columns: 6fr 5fr;
-    /* grid-template-rows: 1fr 40px 40px; */
 }
 
 main  div.article-box  article {
@@ -63,6 +62,7 @@ main  div.article-box  article {
 
 main article {
     padding: 10px 40px;
+    text-shadow: 0 0 8px rgb(201, 201, 201);
 }
 
 article > p:nth-last-of-type(1) {
@@ -74,7 +74,6 @@ a.read-more-expandable {
     max-width: fit-content;
     align-self: center;
     background-image: linear-gradient(var(--bs-white), var(--bs-cyan));
-
 }
 
 div.readMore-collapse {
