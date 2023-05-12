@@ -31,14 +31,14 @@ img.designed-logo {
     animation: drop 1.0s linear forwards 1.6s;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
     img.designed-logo {
         display: none;
     }
 
     img.switching_logo {
         object-fit: contain;
-        max-height: 175px;
+        max-height: 75px;
     }
 }
 

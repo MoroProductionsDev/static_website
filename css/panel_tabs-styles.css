@@ -3,8 +3,9 @@
     padding: 0;
 }
 
+
 div.panel {
-    width: 520px;
+    width: 100% - 10%;
     /* border: 3px solid purple; */
     max-width: fit-content;
     display: grid;
@@ -12,32 +13,65 @@ div.panel {
     grid-auto-columns: auto;
 }
 
-div.panel> article {
-    padding: 10px;
+div.panel > section {
+    padding: 10px ;
     min-height: 250px;
-    border: 1px solid var(--bs-cyan);
-    border-top: none;
     border-radius: 0 0 0.3rem 0.3rem;
 }
 
-div.panel > article:not(:first-child) {
+
+div.panel > section {
     display: none;
+}
+
+div.panel > section:not(:last-child) {
+    display: block;
 }
 
 
 div.btn-group > label{
-    color: var(--bs-cyan) !important;
-    border-color: var(--bs-cyan) !important;
-    background-color: var(--bs-white) !important;
+    background-color: transparent !important;
     border-radius: 0.3rem 0.3rem 0 0 !important;
     opacity: 0.7;
+    background-image: linear-gradient(white 60%, transparent); 
 }
 
 div.btn-group > input[type="radio"]:checked + label  {
-    border-bottom: none;
+    border-bottom: none !important;
     opacity: 1;
     font-size: 1.05rem;
     font-weight: 600;
+}
+
+
+/* Colors Changes for Pages*/
+main#cats-page div.btn-group > label {
+    color: var(--bs-pink) !important;
+    border-color: var(--bs-pink) !important;
+}
+
+main#cats-page div.panel > section {
+    border: 1px solid var(--bs-pink) !important;
+    border-top: none !important;
+}
+
+main#dogs-page div.btn-group > label {
+    color: var(--bs-blue) !important;
+    border-color: var(--bs-blue) !important;
+}
+
+main#dogs-page div.panel > section {
+    border: 1px solid var(--bs-blue) !important;
+    border-top: none !important;
+}
+
+@media (max-width: 1320px) {
+    div.panel  {
+        display: grid;
+        align-self: center;
+        max-width: 600px;
+        height: fit-content;
+    };
 }
 
 @media (max-width: 500px) {
@@ -55,17 +89,25 @@ div.btn-group > input[type="radio"]:checked + label  {
         min-height: 80px;
         padding: 20px 10px;
         border-radius: 0.3rem 0 0 0.3rem !important;
-        border-left: 1px solid var(--bs-cyan) !important;
     }
 
     div.btn-group > input[type="radio"]:checked + label  {
-        border-bottom: 1px solid var(--bs-cyan);
         border-right: none;
     }
 
-    div.panel> article {
+    main.dogs-page div.panel> section {
         border-left: none;
-        border-top: 1px solid var(--bs-cyan);;
         border-radius: 0 0.3rem 0.3rem 0;
+    }
+
+    /* Colors Changes for Pages*/
+    main#dogs-page div.btn-group > label {
+        border-left: 1px solid var(--bs-blue) !important;
+    }
+    main#dogs-page div.btn-group > input[type="radio"]:checked + label  {
+        border-bottom: 1px solid var(--bs-blue);
+    }
+    main#dogs-page div.panel> section {
+        border-top: 1px solid var(--bs-blue);;
     }
 }
