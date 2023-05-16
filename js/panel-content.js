@@ -19,10 +19,9 @@ function displayArticle(rdbutton) {
     });
     
     for (let idx = 0; idx < sections.length; ++idx) {
-        console.log(`${sections[idx].id} === ${section_ids[activeIdx]}`);
 
         // compare the active index section with to hide or show the content of the session.
-        if(sections[idx].id == section_ids[activeIdx]) {
+        if(sections[idx].id === section_ids[activeIdx]) {
             sections[idx].style.display = "block";
         } else {
             sections[idx].style.display = "none";

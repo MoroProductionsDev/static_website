@@ -113,35 +113,53 @@ main#home-page form.pet-form {
 }
 
 main#cats-page,
-main#dogs-page  {
+main#dogs-page,  
+main#birds-page,
+main#fish-page,
+main#small-animals-page,
+main#faqs-page {
     display: grid;
     justify-content: center;
 }
 
 main#cats-page div.article-box article,
-main#dogs-page div.article-box article{
+main#dogs-page div.article-box article,
+main#birds-page div.article-box article,
+main#small-animals-page div.article-box article,
+main#fish-page div.article-box article {
     padding: 20px;
     width: 800px;
 }
 
-main#cats-page div.article-box > label,
-main#dogs-page div.article-box  article {
+/* main#cats-page div.article-box > label,
+main#dogs-page div.article-box  article,
+main#birds-page div.article-box article {
     margin-top: 20px;
-}
+} */
 
 main#cats-page div.article-box article p:first-child,
-main#dogs-page div.article-box article p:first-child {
+main#dogs-page div.article-box article p:first-child,
+main#fish-page div.article-box article p:nth-last-of-type(1) {
     margin-bottom: 40px;
 }
 
 main#cats-page div.article-box article section,
-main#dogs-page div.article-box article section {
+main#dogs-page div.article-box article section,
+main#birds-page div.article-box article section,
+main#fish-page div.article-box article section   {
     padding: 30px 30px;
 }
 
-/* main#cats-page div.article-box article {
-    flex-shrink: 1;
-} */
+main#faqs-page span.questions-title {
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+}
+
+.icon-color {
+    fill: var(--bs-indigo);
+}
 
 @media only screen and (max-width: 1320px) {
     header {
@@ -160,11 +178,12 @@ main#dogs-page div.article-box article section {
     }
 
     main#home-page article, 
-    main#cats-page article {
+    main#cats-page article,
+    main#dogs-page article,
+    main#birds-page article, 
+    main#fish-page article,
+    main#small-animals-page article,
+    main#faqs-page {
         padding: 30px 225px;
-    }
-
-    main#cats-page p {
-        padding-inline: 40px;
     }
 }

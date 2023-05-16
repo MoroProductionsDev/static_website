@@ -24,7 +24,7 @@ div.panel > section {
     display: none;
 }
 
-div.panel > section:not(:last-child) {
+div.panel > section:first-of-type {
     display: block;
 }
 
@@ -62,6 +62,16 @@ main#dogs-page div.btn-group > label {
 
 main#dogs-page div.panel > section {
     border: 1px solid var(--bs-blue) !important;
+    border-top: none !important;
+}
+
+main#fish-page div.btn-group > label {
+    color: var(--bs-green) !important;
+    border-color: var(--bs-green) !important;
+}
+
+main#fish-page div.panel > section {
+    border: 1px solid var(--bs-green) !important;
     border-top: none !important;
 }
 

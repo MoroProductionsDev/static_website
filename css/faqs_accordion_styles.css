@@ -4,7 +4,7 @@
 }
 
 div.accordion {
-    max-width: 800px;
+    min-width: 800px;
 }
 
 div.accordion-body > p:not(.card-text){
