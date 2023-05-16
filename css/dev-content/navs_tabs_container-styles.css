@@ -34,31 +34,31 @@ ul.nav a.active {
     font-weight: normal !important;
 }
 
-ul.nav a.active[href="/main.html"], a.nav-link[href="/main.html"]:hover {
+ul.nav a.active[href="/main.html"], a.nav-link[href="main.html"]:hover {
     color: var(--bs-cyan) !important;
 }
 
-ul.nav a.active[href="/cats.html"], a.nav-link[href="/cats.html"]:hover {
+ul.nav a.active[href="/pages/cats.html"], a.nav-link[href="/pages/cats.html"]:hover {
     color: var(--bs-pink) !important;
 }
 
-ul.nav a.active[href="/dogs.html"], a.nav-link[href="/dogs.html"]:hover {
+ul.nav a.active[href="/pages/dogs.html"], a.nav-link[href="/pages/dogs.html"]:hover {
     color: var(--bs-blue) !important;
 }
 
-ul.nav a.active[href="/birds.html"], a.nav-link[href="/birds.html"]:hover {
+ul.nav a.active[href="/pages/birds.html"], a.nav-link[href="/pages/birds.html"]:hover {
     color: var(--bs-primary-text-emphasis) !important;
 }
 
-ul.nav a.active[href="/fish.html"], a.nav-link[href="/fish.html"]:hover {
+ul.nav a.active[href="/pages/fish.html"], a.nav-link[href="/pages/fish.html"]:hover {
     color: var(--bs-green) !important;
 }
 
-ul.nav a.active[href="/small.html"], a.nav-link[href="/small.html"]:hover {
+ul.nav a.active[href="/pages/small.html"], a.nav-link[href="/pages/small.html"]:hover {
     color: var(--bs-orange) !important;
 }
 
-ul.nav a.active[href="/faqs.html"], a.nav-link[href="/faqs.html"]:hover {
+ul.nav a.active[href="/pages/faqs.html"], a.nav-link[href="/pages/faqs.html"]:hover {
     color: var(--bs-indigo) !important;
 }
 
