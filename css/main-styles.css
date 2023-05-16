@@ -161,6 +161,30 @@ main#faqs-page span.questions-title {
     fill: var(--bs-indigo);
 }
 
+main#cats-page div.page-img-avatar,
+main#dogs-page div.page-img-avatar,
+main#birds-page div.page-img-avatar,
+main#fish-page div.page-img-avatar,
+main#small-animals-page div.page-img-avatar {
+    display: grid;
+    justify-content: center;
+    padding: 1.5rem 0;
+    /* background-image: linear-gradient(white, transparent); */
+    border-radius: 50%;
+}
+
+main#cats-page div.page-img-avatar img,
+main#dogs-page div.page-img-avatar img,
+main#birds-page div.page-img-avatar img,
+main#fish-page div.page-img-avatar img,
+main#small-animals-page div.page-img-avatar img {
+    object-fit: cover;
+    min-width: 100%;
+    border-radius: 50%;
+    filter: drop-shadow(6px 6px 34.5px rgb(197, 197, 197))
+    saturate(105%) opacity(85%);
+}
+
 @media only screen and (max-width: 1320px) {
     header {
         display: flex;
