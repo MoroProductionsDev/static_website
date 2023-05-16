@@ -23,7 +23,6 @@ body {
 div.canvas {
     max-width: 1080px;
     min-height: 100vh;
-    /* background-color: yellow; */
 }
 
 header{
@@ -32,7 +31,6 @@ header{
     margin: 0 calc(-50vw + 50%);
     padding: 20px calc(70vw - 115%) !important;
     background-image: linear-gradient(white 80%, transparent);
-    filter: 0.8;
     border-radius: 0 0 2rem 2rem;
     padding: 20px 3rem;
 
@@ -67,7 +65,6 @@ header > form.search-form{
 }
 
 main#home-page {
-    /* background-color: aquamarine; */
     display: grid;
     grid-template-columns: 6fr 5fr;
 }
@@ -131,12 +128,6 @@ main#fish-page div.article-box article {
     width: 800px;
 }
 
-/* main#cats-page div.article-box > label,
-main#dogs-page div.article-box  article,
-main#birds-page div.article-box article {
-    margin-top: 20px;
-} */
-
 main#cats-page div.article-box article p:first-child,
 main#dogs-page div.article-box article p:first-child,
 main#fish-page div.article-box article p:nth-last-of-type(1) {
@@ -150,7 +141,7 @@ main#fish-page div.article-box article section   {
     padding: 30px 30px;
 }
 
-main#faqs-page span.questions-title {
+main#faqs-page div.questions-title {
     max-width: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -169,7 +160,6 @@ main#small-animals-page div.page-img-avatar {
     display: grid;
     justify-content: center;
     padding: 1.5rem 0;
-    /* background-image: linear-gradient(white, transparent); */
     border-radius: 50%;
 }
 

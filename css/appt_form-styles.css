@@ -1,5 +1,4 @@
 form.pet-form {
-    /* border: 3px solid aqua; */
     width: 450px;
     height: 500px;
     padding: 20px;
@@ -7,14 +6,11 @@ form.pet-form {
 
 @media (max-width: 1080px) {
     form.pet-form  {
-        /* display: grid !important; */
-        /* grid-template-columns: 1fr; */
         max-width: 400px;
         height: fit-content;
-    };
+    }
 
     form > div:first-child {
-        border: 5px solid blue !important;
         grid-column: span 1;
     }
 }
@@ -23,6 +19,6 @@ form.pet-form {
     form {
         display: flex !important;
         max-width: 350px;
-    };
+    }
 }
 
