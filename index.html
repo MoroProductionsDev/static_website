@@ -105,8 +105,8 @@
           </div>
         <form class="row g-3 needs-validation pet-form" novalidate>
           <div class="col-md-6">
-              <label for="validation-firstname-textinput" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validation-firstname-textinput" value="" placeholder="John" required>
+              <label for="validation-petsnamee-textinput" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validation-petsnamee-textinput" value="" placeholder="John" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -118,21 +118,21 @@
                 Looks good!
               </div>
             </div>
-            <div class="col-md-12">
-              <label for="validation-email-textinput" class="form-label">Email</label>
-              <input type="text" class="form-control" id="validation-email-textinput" placeholder="@example.com" value="" required>
+            <div class="col-md-5">
+              <label for="validation-petsname-textinput" class="form-label">Pet's name</label>
+              <input type="text" class="form-control" id="validation-petsname-textinput" value="" placeholder="Coco" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
-            <div class="col-md-8">
-              <label for="validation-phone-number-textinput" class="form-label">Phone</label>
-              <input type="text" class="form-control" id="validation-phone-number-textinput" value="" placeholder="(808) 888-8888" required>
+            <div class="col-md-3">
+              <label for="validation-petsage-textinput" class="form-label">Pet's name</label>
+              <input type="text" class="form-control" id="validation-petsage-textinput" value="" placeholder="3" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
-          </div>  
-          <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
               <label for="validation-pet-type-selector" class="form-label">Pet Type</label>
               <select class="form-select" id="validation-pet-type-selector" required>
                 <option selected disabled value="">Choose...</option>
@@ -143,7 +143,21 @@
                 <option value="small">Small</option>
               </select>
           </div>
-            <div class="col-md-">
+          <div class="col-md-7">
+            <label for="validation-email-textinput" class="form-label">Email</label>
+            <input type="text" class="form-control" id="validation-email-textinput" placeholder="@example.com" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+            <div class="col-md-5">
+              <label for="validation-phone-number-textinput" class="form-label">Phone</label>
+              <input type="text" class="form-control" id="validation-phone-number-textinput" value="" placeholder="(808) 888-8888" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+          </div>  
+            <div class="col-md-6">
               <label for="validation-location-selector" class="form-label">Location</label>
               <select class="form-select" id="validation-location-selector" required>
                 <option selected disabled value="">Choose...</option>
@@ -151,10 +165,23 @@
                 <option value="CA">Petaluma, California</option>
                 <option value="NY">Orlando, Florida</option>
                 <option value="NY">Houston, Texas</option>
-                <option>...</option>
+                <option value="NY">Salt Lake City, Utah</option>
               </select>
               <div class="invalid-feedback">
                 Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-5">
+              <label for="validation-timezone-selector" class="form-label">Time Zone</label>
+              <select class="form-select" id="validation-timezone-selector" required>
+                <option selected disabled value="">Choose...</option>
+                <option value="NY">EST</option>
+                <option value="NY">CST</option>
+                <option value="CA">MST</option>
+                <option value="NY">PST</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid time zone.
               </div>
             </div>
             <div class="col-12 text-center">
